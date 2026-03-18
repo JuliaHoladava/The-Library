@@ -1,0 +1,17 @@
+.favorites-section-title {
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 0.25em;
+}
+
+.favorites-line {
+  width: 100%;
+  height: 1px;
+  background-color: #800020;
+}
+
+.favorites-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}

@@ -1,0 +1,72 @@
+.favorites-card {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: 0.4em;
+  overflow: hidden;
+  background-color: #f5f5dc;
+  padding-right: 0.5rem;
+}
+
+.favorites-cover {
+  display: block;
+  width: 60px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: #f0f0f0;
+}
+
+.favorites-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 5px 5px;
+  gap: 0.25em;
+}
+
+.favorites-title {
+  font-size: 0.75rem;
+}
+
+.favorites-author,
+.favorites-year {
+  font-size: 0.75rem;
+}
+
+.fav-button {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #800020;
+  transition: all 0.2s ease;
+  padding: 6px;
+}
+
+.fav-button svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: all 0.2s ease;
+}
+
+.fav-button:focus {
+  outline: none;
+}
+
+.fav-button.active svg {
+  fill: #800020;
+}
